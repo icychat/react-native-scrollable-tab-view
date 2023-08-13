@@ -11,7 +11,6 @@ const {
   Platform,
   StyleSheet,
   InteractionManager,
-  ViewPropTypes,
 } = ReactNative;
 
 const TimerMixin = require('react-timer-mixin');
@@ -33,25 +32,6 @@ const ScrollableTabView = createReactClass({
   },
   scrollOnMountCalled: false,
   tabWillChangeWithoutGesture: false,
-
-  propTypes: {
-    tabBarPosition: PropTypes.oneOf(['top', 'bottom', 'overlayTop', 'overlayBottom', ]),
-    initialPage: PropTypes.number,
-    page: PropTypes.number,
-    onChangeTab: PropTypes.func,
-    onScroll: PropTypes.func,
-    renderTabBar: PropTypes.any,
-    tabBarUnderlineStyle: ViewPropTypes.style,
-    tabBarBackgroundColor: PropTypes.string,
-    tabBarActiveTextColor: PropTypes.string,
-    tabBarInactiveTextColor: PropTypes.string,
-    tabBarTextStyle: PropTypes.object,
-    style: ViewPropTypes.style,
-    contentProps: PropTypes.object,
-    scrollWithoutAnimation: PropTypes.bool,
-    locked: PropTypes.bool,
-    prerenderingSiblingsNumber: PropTypes.number,
-  },
 
   getDefaultProps() {
     return {
