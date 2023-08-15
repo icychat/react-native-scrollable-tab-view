@@ -2,7 +2,6 @@ const React = require('react');
 const { Component } = React;
 const ReactNative = require('react-native');
 const createReactClass = require('create-react-class');
-const PropTypes = require('prop-types');
 const {
   Dimensions,
   View,
